@@ -8,6 +8,6 @@ $query = "DELETE FROM taches WHERE id = $id";
 
 $execution=$bdd->exec($query);
 
-header('Location: exoSelect.php');
+header('Location: index.php');
 
 ?>

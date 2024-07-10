@@ -1,4 +1,8 @@
 <?php
-$bdd = new PDO('mysql:host=localhost;dbname=projet_juillet_todolist;charset=utf8', 'root', '', 
-array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-?>
+    
+$host = 'localhost';
+$dbname = 'projet_juillet_todolist';
+$user = 'root';
+$password = '';
+    
+$bdd = new PDO('mysql:host='.$host.';dbname='.$dbname.';', $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
