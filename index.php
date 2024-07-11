@@ -16,17 +16,20 @@ $taches=$bdd->query($requete); // réalisation de la requête
 </head>
 <body>
     <h1>To Do List</h1>
-    <form action="testInsert.php" method="GET">
+    <form action="insertion.php" method="GET">
         <label for="nom">Ajouter Tâches</label>
         <input type="text" id="nom" name="nom">
         <input type="submit" value="Envoyer">
     </form>
 
-    <?php foreach ($taches as $tache) { ?>
-    Produit : <?php $tache['nom'] . '<a href=traitementdelete.php?id=' . $tache['id'] . '> suprimer</a>' . "<br>";
-    <?php } ?>
+    <?php foreach ($taches as $tache) : ?>
+        <ul>
+          <?= $tache['nom']; ?>
+          <a href="traitementDelete.php?id=<?= $tache['id']; ?>">Supprimer</a>  
+        </ul>
+        
+    <?php endforeach; ?>
+
+    
 </body>
 </html>
-
-
-    Produit : <?= $tache['nom'] ?> <a href="traitementdelete.php?id=<?= $tache['id'] ?>">suprimer</a><br>
