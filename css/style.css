@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+}
+
+.boite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.ajouter {
+    font-size: 20px;
+}
+
+.card {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.texte {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+
+.fond {
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px; 
+}
+
+.bouton-check {
+    margin-right: 10px; /* Espace à droite du checkbox */
+}
+
+.bouton-delete {
+    color: red; /* Exemple de style pour le lien Supprimer */
+    margin-left: 15px;
+}
